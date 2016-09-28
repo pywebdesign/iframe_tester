@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iframe Tester</title>
+	<script src="iframe_tester.js"></script>
+</head>
+<body>
+
+	<script>
+		
+		//simply test for an iframe
+		iframeTester.test("http://reddit.com")
+
+		//catch an iframe_failed event
+		document.addEventListener('iframe_failed', function(){
+			console.log("iframe failed");
+		})
+
+		//promise based response in the futur	
+	</script>
+</body>
+</html>
