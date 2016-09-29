@@ -5,7 +5,7 @@
 	}
 
 	window.IframeTester = {
-		test: function(url, failed, success){
+		test: function(url, success, failed){
 			var iframe = document.createElement('iframe');
 
 			iframe.onload = function() {

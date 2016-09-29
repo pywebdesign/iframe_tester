@@ -11,12 +11,18 @@ npm install iframe_tester
 #Usage
 
 ```
-IframeTester.test("http://reddit.com")
+    //simply test for an iframe
+    IframeTester.test("http://reddit.com", function(){
+            console.log("damn");
+        }, function(){
+            console.log("yeah")
+        }
+    );
 
-        //catch an iframe_failed event
-        document.addEventListener('iframe_failed', function(){
-            console.log("iframe failed");
-        })
+    //catch an iframe_failed event
+    document.addEventListener('iframe_failed', function(){
+        console.log("We received the fail event");
+    })
 
 ```
 
