@@ -1,11 +1,11 @@
 (function(){
 	events = {
-		failed: "iframe_failed",
-		succeed:"iframe_succeed"
+		failed:  "iframe_failed",
+		succeed: "iframe_succeed"
 	}
 
 	window.IframeTester = {
-		test: function(url){
+		test: function(url, failed, success){
 			var iframe = document.createElement('iframe');
 
 			iframe.onload = function() {
@@ -13,10 +13,16 @@
 					//It failed
 					var event = new Event(events.failed);
 					document.dispatchEvent(event);
+					if(typeof(failed) == 'function'){
+						failed(event, iframe)
+					}
 				}else{
 					//it didn't failed
 					var event = new Event(events.succeed);
 					document.dispatchEvent(event);
+					if(typeof(success) == 'function'){
+						success(event, iframe)
+					}
 				}
 			};
 
