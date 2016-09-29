@@ -13,9 +13,9 @@ npm install iframe_tester
 ```
     //simply test for an iframe
     IframeTester.test("http://reddit.com", function(){
-            console.log("damn");
+            console.log("success");
         }, function(){
-            console.log("yeah")
+            console.log("failure")
         }
     );
 
