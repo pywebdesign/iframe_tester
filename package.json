@@ -1,0 +1,25 @@
+{
+  "name": "iframe_tester",
+  "version": "1.0.0",
+  "description": "A simple way to verify if a user's provided link can be embedded in an iframe.",
+  "main": "iframe_tester.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pywebdesign/iframe_tester.git"
+  },
+  "keywords": [
+    "iframe",
+    "X-Frame-Options",
+    "SAMEORIGIN",
+    "embed"
+  ],
+  "author": "Pierre-Yves Mathieu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pywebdesign/iframe_tester/issues"
+  },
+  "homepage": "https://github.com/pywebdesign/iframe_tester#readme"
+}

@@ -5,7 +5,7 @@
 				succeed:"iframe_succeed"
 			}
 
-			window.iframeTester = {
+			window.IframeTester = {
 				test: function(url){
 					var iframe = document.createElement('iframe');
 
