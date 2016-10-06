@@ -1,3 +1,17 @@
+/*************************************************************************
+ * MIT License
+ *
+ *************************************************************************
+ *
+ * @description
+ * A simple way to verify if a user's provided link can be embedded in an 
+ * iframe. It simply try in the background and report on it's failure as 
+ * an event and soon in a promise.
+ * 
+ * @author
+ * Pierre-Yves Mathieu
+ *
+ *************************************************************************/
 (function(){
 	events = {
 		failed:  "iframe_failed",
